@@ -14,10 +14,10 @@ public class TVTest {
 	@Test
 	public void test() {
 		tv.on();
-		assertEquals(true,tv.getTVState());
+		assertEquals(true,tv.getState());
 		
 		tv.off();
-		assertEquals(false,tv.getTVState());
+		assertEquals(false,tv.getState());
 		
 		tv.on();
 		tv.chdw();

@@ -13,10 +13,10 @@ public class LightTest {
 	@Test
 	public void test() {
 		light.on();
-		assertEquals(true,light.getLightState());
+		assertEquals(true,light.getState());
 		
 		light.off();
-		assertEquals(false,light.getLightState());
+		assertEquals(false,light.getState());
 	}
 
 }

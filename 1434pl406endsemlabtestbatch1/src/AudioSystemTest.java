@@ -13,10 +13,10 @@ public class AudioSystemTest {
 	@Test
 	public void test() {
 		as.on();
-		assertEquals(true,as.getASState());
+		assertEquals(true,as.getState());
 		
 		as.off();
-		assertEquals(false,as.getASState());
+		assertEquals(false,as.getState());
 	}
 
 }

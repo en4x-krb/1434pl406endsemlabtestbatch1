@@ -40,7 +40,7 @@ public class WashMachine implements Has{
 		
 	}
 	
-	public boolean getWashMachineState() {
+	public boolean getState() {
 		return washMachineState;
 	}
 

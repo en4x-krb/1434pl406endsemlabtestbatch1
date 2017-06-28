@@ -55,7 +55,7 @@ public class TV implements Has{
 		return channel;
 	}
 	
-	public boolean getTVState() {
+	public boolean getState() {
 		return tvState;
 	}
 

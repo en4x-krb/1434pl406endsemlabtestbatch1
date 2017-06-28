@@ -1,6 +1,6 @@
 
 public class Light implements Has{
-	private boolean lightState =false; //Default light is OFF
+	private boolean lightState=false; //Default light is OFF
 	@Override
 	public void on() {
 		lightState=true;
@@ -32,8 +32,9 @@ public class Light implements Has{
 	public void voldw() {
 		//Do Nothing
 	}
-	
-	public boolean getLightState() {
+
+	@Override
+	public boolean getState() {
 		return lightState;
 	}
 }

@@ -13,10 +13,10 @@ public class ACTest {
 	@Test
 	public void test() {
 		ac.on();
-		assertEquals(true,ac.getACState());
+		assertEquals(true,ac.getState());
 		
 		ac.off();
-		assertEquals(false,ac.getACState());
+		assertEquals(false,ac.getState());
 	}
 
 }

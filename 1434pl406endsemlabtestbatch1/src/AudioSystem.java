@@ -38,7 +38,7 @@ public class AudioSystem implements Has{
 		
 	}
 	
-	public boolean getASState() {
+	public boolean getState() {
 		return asState;
 	}
 

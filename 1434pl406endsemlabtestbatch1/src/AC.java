@@ -38,7 +38,7 @@ public class AC implements Has{
 		
 	}
 	
-	public boolean getACState() {
+	public boolean getState() {
 		return acState;
 	}
 

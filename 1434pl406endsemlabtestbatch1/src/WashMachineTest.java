@@ -14,10 +14,10 @@ public class WashMachineTest {
 	@Test
 	public void test() {
 		washMachine.on();
-		assertEquals(true,washMachine.getWashMachineState());
+		assertEquals(true,washMachine.getState());
 		
 		washMachine.off();
-		assertEquals(false,washMachine.getWashMachineState());
+		assertEquals(false,washMachine.getState());
 	}
 
 }

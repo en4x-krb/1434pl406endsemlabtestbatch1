@@ -6,4 +6,5 @@ public interface Has {
  public void chdw();
  public void volup();
  public void voldw();
+ public boolean getState();
 }
