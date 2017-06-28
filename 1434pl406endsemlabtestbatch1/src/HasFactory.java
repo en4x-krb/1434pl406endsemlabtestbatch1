@@ -1,18 +1,18 @@
 
 public class HasFactory {
-	public Has control(String appType) {
-		if(appType == null)
+	public Has getAppliances(String applianceType) {
+		if(applianceType == null)
 			return null;
 		
-		if(appType.equalsIgnoreCase("LIGHT"))
+		if(applianceType.equalsIgnoreCase("LIGHT"))
 			return new Light();
-		else if(appType.equalsIgnoreCase("AC"))
+		else if(applianceType.equalsIgnoreCase("AC"))
 			return new AC();
-		else if(appType.equalsIgnoreCase("TV"))
+		else if(applianceType.equalsIgnoreCase("TV"))
 			return new TV();
-		else if(appType.equalsIgnoreCase("AUDIO SYSTEM"))
+		else if(applianceType.equalsIgnoreCase("AUDIO SYSTEM"))
 			return new AudioSystem();
-		else if(appType.equalsIgnoreCase("WASHING MACHINE"))
+		else if(applianceType.equalsIgnoreCase("WASHING MACHINE"))
 			return new WashMachine();
 		
 		return null;
