@@ -1,13 +1,15 @@
 
 public class Light implements Has{
-
+	private boolean lightState =false; //Default light is OFF
 	@Override
 	public void on() {
+		lightState=true;
 		System.out.println("Light is turned On");
 	}
 
 	@Override
 	public void off() {
+		lightState=false;
 		System.out.println("Light is turned off");
 	}
 
@@ -30,5 +32,8 @@ public class Light implements Has{
 	public void voldw() {
 		//Do Nothing
 	}
-
+	
+	public boolean getLightState() {
+		return lightState;
+	}
 }

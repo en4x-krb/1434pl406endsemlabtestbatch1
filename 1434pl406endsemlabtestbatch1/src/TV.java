@@ -1,5 +1,6 @@
 
 public class TV implements Has{
+	private boolean tvState=false; //TV is OFF
 	private int vol;
 	private int channel;
 	private final int maxChannel;
@@ -12,17 +13,19 @@ public class TV implements Has{
 	}
 	@Override
 	public void on() {
+		tvState=true;
 		System.out.printf("TV is turned On\n");
 	}
 
 	@Override
 	public void off() {
+		tvState=false;
 		System.out.printf("TV is turned On\n");
 	}
 	
 	public void chup() {
 		if(++channel>=maxChannel)
-			channel=0;
+			channel=1;
 		System.out.printf("Switching to next channel %d\n",channel);
 	}
 	
@@ -42,6 +45,18 @@ public class TV implements Has{
 		if(--vol<=0) 
 			vol=0;
 		System.out.printf("Volume Decreased, Vol : %d\n",vol);
+	}
+	
+	public int getVol() {
+		return vol;
+	}
+	
+	public int getChannel() {
+		return channel;
+	}
+	
+	public boolean getTVState() {
+		return tvState;
 	}
 
 }

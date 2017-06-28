@@ -1,13 +1,15 @@
 
 public class AudioSystem implements Has{
-
+	private boolean asState=false; //Audio System is OFF
 	@Override
 	public void on() {
+		asState=true;
 		System.out.println("Audio System is turned on");
 	}
 
 	@Override
 	public void off() {
+		asState=false;
 		System.out.println("Audio System is turned off");
 		
 	}
@@ -34,6 +36,10 @@ public class AudioSystem implements Has{
 	public void voldw() {
 		//Do Nothing
 		
+	}
+	
+	public boolean getASState() {
+		return asState;
 	}
 
 }
