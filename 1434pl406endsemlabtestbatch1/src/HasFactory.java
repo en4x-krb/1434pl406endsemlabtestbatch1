@@ -17,4 +17,8 @@ public class HasFactory {
 		
 		return null;
 	}
+	
+	public void enterHome() {
+		
+	}
 }

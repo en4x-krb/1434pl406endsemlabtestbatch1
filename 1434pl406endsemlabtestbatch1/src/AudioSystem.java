@@ -12,4 +12,28 @@ public class AudioSystem implements Has{
 		
 	}
 
+	@Override
+	public void chup() {
+		//Do Nothing
+		
+	}
+
+	@Override
+	public void chdw() {
+		//Do Nothing
+		
+	}
+
+	@Override
+	public void volup() {
+		//Do Nothing
+		
+	}
+
+	@Override
+	public void voldw() {
+		//Do Nothing
+		
+	}
+
 }
